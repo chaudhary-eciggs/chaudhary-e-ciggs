@@ -3,46 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Store</title>
+  <title>My Online Store</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>My Online Store</h1>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">MyStore</div>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">Cart (<span id="cart-count">0</span>)</a>
+      <a href="index.html">Home</a>
+      <a href="#products">Products</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
     </nav>
   </header>
 
-  <main>
-    <section class="products">
-      <h2>Products</h2>
-      <div class="product-list">
-        <div class="product">
-          <h3>Product 1</h3>
-          <p>$10</p>
-          <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
-        </div>
-        <div class="product">
-          <h3>Product 2</h3>
-          <p>$15</p>
-          <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
-        </div>
-        <div class="product">
-          <h3>Product 3</h3>
-          <p>$20</p>
-          <button onclick="addToCart('Product 3', 20)">Add to Cart</button>
-        </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to MyStore</h1>
+    <p>Shop the latest products at the best prices</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Product Grid -->
+  <main id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 1">
+        <h3>Wireless Headphones</h3>
+        <p>$50</p>
+        <button onclick="addToCart('Wireless Headphones', 50)">Add to Cart</button>
       </div>
-    </section>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 2">
+        <h3>Smartwatch</h3>
+        <p>$75</p>
+        <button onclick="addToCart('Smartwatch', 75)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 3">
+        <h3>Gaming Mouse</h3>
+        <p>$30</p>
+        <button onclick="addToCart('Gaming Mouse', 30)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200" alt="Product 4">
+        <h3>Bluetooth Speaker</h3>
+        <p>$40</p>
+        <button onclick="addToCart('Bluetooth Speaker', 40)">Add to Cart</button>
+      </div>
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 My Store | Contact: info@mystore.com</p>
+    <p>© 2025 MyStore | Contact: info@mystore.com</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
-                            </html>
+</html>
