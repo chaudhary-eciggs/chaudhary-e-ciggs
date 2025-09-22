@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Online Store</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+      <h2>Products</h2>
+      <div class="product-list">
+        <div class="product">
+          <h3>Product 1</h3>
+          <p>$10</p>
+          <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Product 2</h3>
+          <p>$15</p>
+          <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Product 3</h3>
+          <p>$20</p>
+          <button onclick="addToCart('Product 3', 20)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Store | Contact: info@mystore.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+                            </html>
